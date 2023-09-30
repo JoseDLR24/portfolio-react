@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkgreen: "#2E7541"
+        blueprimary: "#7395CB",
+        bluesecondary: "#AECDE2",
+        blueblack: "#373D43"
       }
     },
   },

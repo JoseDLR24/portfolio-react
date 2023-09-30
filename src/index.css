@@ -10,6 +10,6 @@
         @apply flex flex-col items-center justify-center w-96 text-center md:w-8/12 lg:max-w-4xl;
     }
     .btn-primary {
-        @apply font-medium border-2 border-darkgreen rounded-xl py-4 px-6 space-x-2 cursor-pointer hover:bg-darkgreen hover:text-white transition duration-300;
+        @apply font-medium border-2 border-blueprimary rounded-xl py-4 px-6 space-x-2 cursor-pointer hover:bg-blueprimary hover:text-white transition duration-300;
     }
 }
