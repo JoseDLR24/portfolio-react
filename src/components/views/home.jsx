@@ -1,5 +1,5 @@
 // importing components
-import Button from './ui/buttons/button';
+import Button from '../ui/buttons/button';
 
 // importing font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +7,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 // importing undraw svg illustrations
-import undrawImg from '../assets/images/undraw_developer.svg';
+import undrawImg from '../../assets/undraw_developer.svg';
 
 
 export default function Home({name, occupation}) {

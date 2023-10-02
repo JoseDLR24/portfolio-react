@@ -1,5 +1,5 @@
 // import Button component
-import Button from './ui/buttons/button';
+import Button from '../ui/buttons/button';
 
 // importing font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,6 +7,8 @@ import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import { faToolbox } from '@fortawesome/free-solid-svg-icons';
 
+// importing the programming languages icons component
+import ProgrammingLanguages from '../ui/techStack/index.jsx';
 
 export default function Skills(){
     return(
@@ -19,7 +21,7 @@ export default function Skills(){
                     <hr className='hr'/>
                 </div>
                 {/* tab btn container */}
-                <div className='flex flex-row space-x-10'>
+                <div className='flex flex-row space-x-5'>
                     <div className='border border-blueblack p-3 rounded-xl space-x-3 flex flex-row items-center'>
                         <FontAwesomeIcon icon={faMicrochip} />
                         <Button content={'Tech Stack'}/>
@@ -29,6 +31,9 @@ export default function Skills(){
                         <Button content={'Tools'}/>
                     </div>
                 </div>
+            </div>
+            <div>
+                <ProgrammingLanguages />
             </div>
         </section>
     )

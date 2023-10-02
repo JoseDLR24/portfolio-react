@@ -1,4 +1,4 @@
-import pfpimg from '../assets/images/pfp.jpg';
+import pfpimg from '../../assets/pfp.jpg';
 
 export default function About(){
     return(

@@ -1,8 +1,8 @@
-import Home from './components/home.jsx';
-import About from './components/about.jsx';
-import Skills from './components/skills.jsx';
+import Home from './components/views/home.jsx';
+import About from './components/views/about.jsx';
+import Skills from './components/views/skills.jsx';
 
-const App = () => {
+export default function App() {
     return (
         <>
             <Home name={"Jose De Los Reyes"} occupation={"Web Developer & Designer"}/>
@@ -11,5 +11,3 @@ const App = () => {
         </>
     )
 }
-
-export default App;
