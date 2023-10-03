@@ -1,52 +1,62 @@
 import React from 'react';
 
-// importing svg imgs
+// importing frontend svg icons
 import htmlIcon from '../../../assets/html5.svg';
 import cssIcon from '../../../assets/css3.svg';
 import tailwindCSSIcon from '../../../assets/tailwindcss.svg';
-import javascriptIcon from '../../../assets/javascript.svg'
+import javascriptIcon from '../../../assets/javascript.svg';
+import reactIcon from '../../../assets/react.svg';
+import vueIcon from '../../../assets/vuejs.svg';
+
+// importing backend svg icons
+import mongodbIcon from '../../../assets/mongodb.svg';
+import expressIcon from '../../../assets/expressJS.svg';
+import nodeIcon from '../../../assets/nodejs.svg';
+import aspnetIcon from '../../../assets/dotnet.svg';
+import phpIcon from '../../../assets/php.svg'
+
 
 const programmingLanguagesData = {
     frontend: [
-        { name: 'HTML', icon: htmlIcon },
-        { name: 'CSS', icon: cssIcon },
-        { name: 'Tailwind CSS', icon: tailwindCSSIcon },
+        { name: 'HTML5', icon: htmlIcon },
+        { name: 'CSS3', icon: cssIcon },
+        { name: 'TailwindCSS', icon: tailwindCSSIcon },
         { name: 'JavaScript', icon: javascriptIcon },
-        { name: 'React.js', icon: 'react-icon.png' },
-        { name: 'Vue.js', icon: "../../assets/vuejs.svg"}
+        { name: 'React.js', icon: reactIcon },
+        { name: 'Vue.js', icon: vueIcon}
     ],
     backend: [
-        { name: 'MongoDB', icon: 'mongodb-icon.png' },
-        { name: 'Express.js', icon: 'express-icon.png' },
-        { name: 'Node.js', icon: 'nodejs-icon.png' },
-        { name: 'ASP.NET', icon: 'aspnet-icon.png' },
-        { name: 'PHP', icon: 'php-icon.png' },
+        { name: 'MongoDB', icon: mongodbIcon }, 
+        { name: 'Express.js', icon: expressIcon },
+        { name: 'Node.js', icon: nodeIcon },
+        { name: 'ASP.NET', icon: aspnetIcon },
+        { name: 'PHP', icon: phpIcon },
     ],
 };
 
 export default function ProgrammingLanguages() {
     return (
-        <>
-            <div>
-                <h2>Frontend</h2>
-                <ul>
+        <div className='w-full space-y-5'>
+            <div className='space-y-4'>
+                <h3 className='text-md lg:text-lg font-semibold'>Frontend</h3>
+                <ul className='flex flex-wrap space-x-4 md:space-x-8 lg:space-x-10'>
                     {programmingLanguagesData.frontend.map((language, index) => (
-                        <li key={index}>
-                            <img src={language.icon} alt={language.name} className='w-10'/> {language.name}
+                        <li key={index} className='text-sm flex flex-col items-center'>
+                            <img src={language.icon} alt={language.name} className='w-8 md:w-12 lg:w-14'/> {language.name}
                         </li>
                     ))}
                 </ul>
             </div>
-            <div>
-                <h2>Backend</h2>
-                <ul>
+            <div className='space-y-4'>
+                <h3 className='text-md lg:text-lg font-semibold'>Backend</h3>
+                <ul className='flex flex-wrap space-x-4 md:space-x-8 lg:space-x-10'>
                     {programmingLanguagesData.backend.map((language, index) => (
-                        <li key={index}>
-                            <img src={language.icon} alt={language.name} /> {language.name}
+                        <li key={index} className='text-sm flex flex-col items-center'>
+                            <img src={language.icon} alt={language.name} className='w-8 md:w-12 lg:w-14'/> {language.name}
                         </li>
                     ))}
                 </ul>
             </div>
-        </>
+        </div>
     );
 }
