@@ -1,11 +1,17 @@
 import React from 'react';
 
+// importing svg imgs
+import htmlIcon from '../../../assets/html5.svg';
+import cssIcon from '../../../assets/css3.svg';
+import tailwindCSSIcon from '../../../assets/tailwindcss.svg';
+import javascriptIcon from '../../../assets/javascript.svg'
+
 const programmingLanguagesData = {
     frontend: [
-        { name: 'HTML', icon: '../../assets/html5.svg' },
-        { name: 'CSS', icon: 'css-icon.png' },
-        { name: 'Tailwind CSS', icon: 'tailwind-icon.png' },
-        { name: 'JavaScript', icon: 'javascript-icon.png' },
+        { name: 'HTML', icon: htmlIcon },
+        { name: 'CSS', icon: cssIcon },
+        { name: 'Tailwind CSS', icon: tailwindCSSIcon },
+        { name: 'JavaScript', icon: javascriptIcon },
         { name: 'React.js', icon: 'react-icon.png' },
         { name: 'Vue.js', icon: "../../assets/vuejs.svg"}
     ],
@@ -14,6 +20,7 @@ const programmingLanguagesData = {
         { name: 'Express.js', icon: 'express-icon.png' },
         { name: 'Node.js', icon: 'nodejs-icon.png' },
         { name: 'ASP.NET', icon: 'aspnet-icon.png' },
+        { name: 'PHP', icon: 'php-icon.png' },
     ],
 };
 
@@ -25,7 +32,7 @@ export default function ProgrammingLanguages() {
                 <ul>
                     {programmingLanguagesData.frontend.map((language, index) => (
                         <li key={index}>
-                            <img src={language.icon} alt={language.name} /> {language.name}
+                            <img src={language.icon} alt={language.name} className='w-10'/> {language.name}
                         </li>
                     ))}
                 </ul>
