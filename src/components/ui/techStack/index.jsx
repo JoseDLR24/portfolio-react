@@ -14,6 +14,7 @@ import expressIcon from '../../../assets/expressJS.svg';
 import nodeIcon from '../../../assets/nodejs.svg';
 import aspnetIcon from '../../../assets/dotnet.svg';
 import phpIcon from '../../../assets/php.svg'
+import mySQLIcon from '../../../assets/mysql.svg';
 
 
 const programmingLanguagesData = {
@@ -31,6 +32,7 @@ const programmingLanguagesData = {
         { name: 'Node.js', icon: nodeIcon },
         { name: 'ASP.NET', icon: aspnetIcon },
         { name: 'PHP', icon: phpIcon },
+        { name: 'WorkBench', icon: mySQLIcon },
     ],
 };
 
@@ -39,9 +41,9 @@ export default function ProgrammingLanguages() {
         <div className='w-full space-y-5'>
             <div className='space-y-4'>
                 <h3 className='text-md lg:text-lg font-semibold'>Frontend</h3>
-                <ul className='flex flex-wrap space-x-4 md:space-x-8 lg:space-x-10'>
+                <ul className='flex flex-wrap md:space-x-8 lg:space-x-10'>
                     {programmingLanguagesData.frontend.map((language, index) => (
-                        <li key={index} className='text-sm flex flex-col items-center'>
+                        <li key={index} className='text-sm flex flex-col items-center w-20 mb-3'>
                             <img src={language.icon} alt={language.name} className='w-8 md:w-12 lg:w-14'/> {language.name}
                         </li>
                     ))}
@@ -49,9 +51,9 @@ export default function ProgrammingLanguages() {
             </div>
             <div className='space-y-4'>
                 <h3 className='text-md lg:text-lg font-semibold'>Backend</h3>
-                <ul className='flex flex-wrap space-x-4 md:space-x-8 lg:space-x-10'>
+                <ul className='flex flex-wrap md:space-x-8 lg:space-x-10'>
                     {programmingLanguagesData.backend.map((language, index) => (
-                        <li key={index} className='text-sm flex flex-col items-center'>
+                        <li key={index} className='text-sm flex flex-col items-center w-20 mb-4'>
                             <img src={language.icon} alt={language.name} className='w-8 md:w-12 lg:w-14'/> {language.name}
                         </li>
                     ))}
