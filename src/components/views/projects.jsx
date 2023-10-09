@@ -13,7 +13,7 @@ export default function Projects(){
     const theBookKeeperTechnologies = ['Handlebars', 'MongoDB', 'Express', 'Bootstrap'];
 
     return(
-        <section className="comp-container">
+        <section className="comp-container lg:space-y-5 mt-12">
             {/* content container */}
             <div className="content-container">
                 {/* title container */}
@@ -22,22 +22,22 @@ export default function Projects(){
                     <hr className="border-2 border-teal-400 w-20"/>
                 </div>                
             </div>
-            <div className='content-container lg:w-screen items-start border border-black'>
+            <div className='content-container lg:w-screen items-start space-y-5'>
                     <FeaturedProjects 
                     title={'Rental Housing Application'}
-                    description={'This is the description of project 1'}
+                    description={'This project was a collaborative team effort aimed at enabling CCSI to efficiently collect data from their chosen rental websites. Its primary goal is to support the creation of accurate housing status reports for Simcoe County. Currently, data is extracted from three key sources: Shoreline Property Management, AG Secure Property Management, and Listanza.'}
                     imgSrc={RentalAppImg}
                     technologies={rentalAppTechnologies}
                     />
                     <FeaturedProjects 
                     title={'See N Say Story Maker'}
-                    description={'This is the description of project 2'}
+                    description={'A simple but an interactive online storytelling tool with five categories, each offering 6-7 word options. Craft your unique story by selecting words, add a twist with Randomize, or start fresh with Restart.'}
                     imgSrc={SeeNSayImg}
                     technologies={seeNSayTechnologies}
                     />
                     <FeaturedProjects 
                     title={'The Book Keeper'}
-                    description={'This web application is a book inventory system, built using essential CRUD functionality. It harnesses the capabilities of MongoDB for efficient data storage, Node.js for server-side processing, and Express.js for seamless web development. Is important to note that certain advanced functionalities are still in development, the core CRUD operations are fully implemented and operational, demonstrating a solid foundation in web application development'}
+                    description={'Simple book inventory system, built using essential CRUD functionality. Is important to note that certain advanced functionalities are still in development, the core CRUD operations are fully implemented and operational, demonstrating a solid foundation in web application development'}
                     imgSrc={TheBookKeeperImg}
                     technologies={theBookKeeperTechnologies}
                     />

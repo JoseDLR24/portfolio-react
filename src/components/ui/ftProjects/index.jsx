@@ -2,20 +2,20 @@ import TechCard from './techCard.jsx';
 
 export default function FeaturedProject({ title, description, imgSrc, technologies }) {
     return (
-        <div className="md:w-full flex flex-col lg:flex-row-reverse lg:justify-end border border-red-400 md:border-blue-600 lg:border-orange-600">
+        <div className="md:w-full flex flex-col lg:flex-row-reverse">
             {/* img container */}
-            <div className="rounded-xl my-5 shadow-lg w-80">
-                <img src={imgSrc} alt={title} className="rounded-xl" />
+            <div className="rounded-xl my-5 w-full">
+                <img src={imgSrc} alt={title} className="rounded-xl shadow-lg" />
             </div>
-            <div className="text-left">
-                <h2 className="font-bold text-xl">{title}</h2>
+            <div className="text-left lg:w-11/12">
+                <h2 className="font-bold text-xl lg:text-2xl">{title}</h2>
                 <div className='flex flex-wrap space-x-3 py-2'>
                     {technologies.map((technology, index) => (
                         <TechCard key={index} technology={technology} />
                     ))}
                 </div>
                 {/* description container */}
-                <div>
+                <div className='text-left lg:w-10/12'>
                     <p>{description}</p>
                 </div>
             </div>
