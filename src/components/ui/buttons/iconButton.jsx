@@ -1,7 +1,10 @@
-export default function IconButton({icon, link, desc}){
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+export default function IconButton({icon, link, desc, content}){
     return(
         <>
-        <a href={link} alt={desc}>{icon}</a>
+        <a href={link} alt={desc} target="_blank" className='space-x-2'><FontAwesomeIcon icon={icon} /><span>{content}</span></a>
         </>
     )
 }

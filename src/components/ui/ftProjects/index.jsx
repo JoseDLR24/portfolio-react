@@ -1,6 +1,9 @@
 import TechCard from './techCard.jsx';
+import IconButton from '../buttons/iconButton.jsx'
 
-export default function FeaturedProject({ title, description, imgSrc, technologies }) {
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
+export default function FeaturedProject({ title, description, imgSrc, technologies, liveSiteLink  }) {
     return (
         <div className="md:w-full flex flex-col lg:flex-row-reverse">
             {/* img container */}
@@ -17,6 +20,10 @@ export default function FeaturedProject({ title, description, imgSrc, technologi
                 {/* description container */}
                 <div className='text-left lg:w-10/12'>
                     <p>{description}</p>
+                </div>
+                {/* btn container */}
+                <div className='border border-orange-500'>
+                    <IconButton icon={faUpRightFromSquare} link={liveSiteLink} desc={'Live Site:'} content={'Live Site'} />
                 </div>
             </div>
         </div>

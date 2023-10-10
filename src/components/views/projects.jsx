@@ -28,18 +28,21 @@ export default function Projects(){
                     description={'This project was a collaborative team effort aimed at enabling CCSI to efficiently collect data from their chosen rental websites. Its primary goal is to support the creation of accurate housing status reports for Simcoe County. Currently, data is extracted from three key sources: Shoreline Property Management, AG Secure Property Management, and Listanza.'}
                     imgSrc={RentalAppImg}
                     technologies={rentalAppTechnologies}
+                    liveSiteLink={'https://rentalapp-6cca3.web.app/'}
                     />
                     <FeaturedProjects 
                     title={'See N Say Story Maker'}
                     description={'A simple but an interactive online storytelling tool with five categories, each offering 6-7 word options. Craft your unique story by selecting words, add a twist with Randomize, or start fresh with Restart.'}
                     imgSrc={SeeNSayImg}
                     technologies={seeNSayTechnologies}
+                    liveSiteLink={'https://see-n-say-story-maker.vercel.app/'}
                     />
                     <FeaturedProjects 
                     title={'The Book Keeper'}
                     description={'Simple book inventory system, built using essential CRUD functionality. Is important to note that certain advanced functionalities are still in development, the core CRUD operations are fully implemented and operational, demonstrating a solid foundation in web application development'}
                     imgSrc={TheBookKeeperImg}
                     technologies={theBookKeeperTechnologies}
+                    liveSiteLink={'https://the-bookkeeper.onrender.com/'}
                     />
                 </div>
         </section>
