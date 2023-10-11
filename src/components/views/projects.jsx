@@ -13,11 +13,11 @@ export default function Projects(){
     const theBookKeeperTechnologies = ['Handlebars', 'MongoDB', 'Express', 'Bootstrap'];
 
     return(
-        <section className="comp-container lg:space-y-5 mt-12">
+        <section id='projects' className="comp-container lg:space-y-5">
             {/* content container */}
-            <div className="content-container pb-6">
+            <div className="content-container pb-6 lg:items-start">
                 {/* title container */}
-                <div className="space-y-2 flex flex-col items-center justify-center">
+                <div className="space-y-2 flex flex-col items-center justify-center lg:items-start">
                     <h2 className='text-3xl lg:text-4xl font-semibold'>Featured Projects</h2>
                     <hr className="border-2 border-teal-400 w-20"/>
                 </div>                

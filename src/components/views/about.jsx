@@ -2,7 +2,7 @@ import pfpimg from '../../assets/pfp.jpg';
 
 export default function About(){
     return(
-        <section className="comp-container min-h-fit space-y-14 bg-blueblack py-10 text-white">
+        <section id='about' className="comp-container min-h-fit space-y-14 bg-blueblack py-10 text-white">
             {/* content container */}
             <div className="content-container text-left space-y-8">
                 <div className="flex flex-col items-center space-y-2">

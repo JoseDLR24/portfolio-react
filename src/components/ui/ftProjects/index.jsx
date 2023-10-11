@@ -13,7 +13,7 @@ export default function FeaturedProject({ title, description, imgSrc, technologi
                 <img src={imgSrc} alt={title} className="rounded-xl shadow-lg" />
             </div>
             <div className="text-left lg:w-11/12">
-                <h2 className="font-bold text-xl lg:text-2xl">{title}</h2>
+                <h2 className="font-semibold text-xl lg:text-2xl">{title}</h2>
                 <div className='flex flex-wrap space-x-3 py-2'>
                     {technologies.map((technology, index) => (
                         <TechCard key={index} technology={technology} />

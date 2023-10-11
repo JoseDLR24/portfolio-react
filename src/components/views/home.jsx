@@ -11,7 +11,7 @@ import undrawImg from '../../assets/undraw_developer.svg';
 
 export default function Home({name, occupation}) {
     return(
-        <section className="comp-container">
+        <section id='home' className="comp-container">
             {/* content container */}
             <div className="content-container lg:flex-row lg:text-left lg:justify-between">
                 <div className='h-60 pb-4'>

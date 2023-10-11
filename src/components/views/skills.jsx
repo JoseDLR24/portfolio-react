@@ -14,7 +14,7 @@ import Tools from '../ui/toolStack/index.jsx';
 export default function Skills(){
     return(
         // component container
-        <section className='comp-container min-h-fit space-y-5 mt-12'>
+        <section id='skills' className='comp-container min-h-fit space-y-5 my-24'>
             {/* content container */}
             <div className='content-container md:items-start'>
                 <div className='space-y-2 flex flex-col items-center justify-center md:items-start'>
