@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Header() {
+    // HEADER ANIMATION TO APPEAR/DISSAPEAR
+
+    // initialize variables to store state
     const [isScrollingUp, setIsScrollingUp] = useState(true);
     const [prevScrollPos, setPrevScrollPos] = useState(0);
 
+    // compares current scroll position with previous scroll position
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.scrollY;
