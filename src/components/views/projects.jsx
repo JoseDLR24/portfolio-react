@@ -15,7 +15,7 @@ export default function Projects(){
     return(
         <section className="comp-container lg:space-y-5 mt-12">
             {/* content container */}
-            <div className="content-container">
+            <div className="content-container pb-6">
                 {/* title container */}
                 <div className="space-y-2 flex flex-col items-center justify-center">
                     <h2 className='text-3xl lg:text-4xl font-semibold'>Featured Projects</h2>
@@ -29,6 +29,7 @@ export default function Projects(){
                     imgSrc={RentalAppImg}
                     technologies={rentalAppTechnologies}
                     liveSiteLink={'https://rentalapp-6cca3.web.app/'}
+                    gitRepoLink={'https://github.com/JoseDLR24/rental-app-client'}
                     />
                     <FeaturedProjects 
                     title={'See N Say Story Maker'}
@@ -36,6 +37,7 @@ export default function Projects(){
                     imgSrc={SeeNSayImg}
                     technologies={seeNSayTechnologies}
                     liveSiteLink={'https://see-n-say-story-maker.vercel.app/'}
+                    gitRepoLink={'https://github.com/JoseDLR24/SeeNSayStoryMaker'}
                     />
                     <FeaturedProjects 
                     title={'The Book Keeper'}
@@ -43,6 +45,7 @@ export default function Projects(){
                     imgSrc={TheBookKeeperImg}
                     technologies={theBookKeeperTechnologies}
                     liveSiteLink={'https://the-bookkeeper.onrender.com/'}
+                    gitRepoLink={'https://github.com/JoseDLR24/Bookstore-inventory'}
                     />
                 </div>
         </section>
