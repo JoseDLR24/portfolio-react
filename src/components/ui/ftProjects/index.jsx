@@ -7,7 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function FeaturedProject({ title, description, imgSrc, technologies, liveSiteLink, gitRepoLink  }) {
     return (
-        <div className="md:w-full flex flex-col lg:flex-row-reverse transition hover:-translate-y-3 hover:translate-x-3 hover:shadow-xl duration-300 border-2 border-blueblack rounded-xl p-5 shadow-md">
+        <div className="md:w-full flex flex-col lg:flex-row-reverse transition hover:-translate-y-3 hover:translate-x-3 hover:shadow-lg hover:shadow-teal-400 duration-300 border-2 border-blueblack rounded-xl p-5 shadow-md">
             {/* img container */}
             <div className="rounded-xl my-5 lg:w-9/12">
                 <img src={imgSrc} alt={title} className="rounded-xl shadow-lg" />
