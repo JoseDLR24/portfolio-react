@@ -6,7 +6,7 @@ export default function About(){
             {/* content container */}
             <div className="content-container text-left space-y-8">
                 <div className="flex flex-col items-center space-y-2">
-                    <h2 className="text-center text-3xl lg:text-4xl font-bold">About me</h2>
+                    <h2 className="text-center text-3xl lg:text-4xl font-semibold">About me</h2>
                     <hr className="border-2 border-teal-400 w-20"/>
                 </div>
                 <div className="flex flex-col items-center lg:items-start space-y-4 lg:flex-row-reverse lg:space-y-0">

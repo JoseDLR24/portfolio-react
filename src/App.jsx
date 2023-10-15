@@ -2,6 +2,7 @@ import Home from './components/views/home.jsx';
 import About from './components/views/about.jsx';
 import Skills from './components/views/skills.jsx';
 import Projects from './components/views/projects.jsx';
+import Contact from './components/views/contact.jsx';
 
 import Header from './components/ui/header/header.jsx';
 
@@ -13,6 +14,7 @@ export default function App() {
             <About />
             <Skills />
             <Projects />
+            <Contact />
         </>
     )
 }

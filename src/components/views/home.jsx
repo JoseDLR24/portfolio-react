@@ -1,5 +1,7 @@
 // importing components
 import Button from '../ui/buttons/button';
+import { Link, Element } from 'react-scroll';
+
 
 // importing font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -30,13 +32,18 @@ export default function Home({name, occupation}) {
                             desc={"View my resume"}/>
                         </div>
                         <div className='btn-primary'>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            <Button 
-                            link={""}
-                            content={"Contact"}
-                            desc={"Contact me"}
-                            />
+                            <Link
+                            to='contact'
+                            spy={true}
+                            smooth={true}
+                            offset={-50}
+                            duration={1000}
+                            className="cursor-pointer"
+                            >
+                                <FontAwesomeIcon icon={faEnvelope} /> Contact
+                            </Link>
                         </div>
+                        
                     </div>
                 </div>
                 {/* img container */}
