@@ -10,7 +10,7 @@ export default function App() {
     return (
         <>
             <Header />
-            <Home name={"Jose De Los Reyes"} occupation={"Web Developer & Designer"}/>
+            <Home name={"Jose De Los Reyes"} occupation={"Web Developer & Designer"} />
             <About />
             <Skills />
             <Projects />

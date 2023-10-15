@@ -23,10 +23,10 @@ export default function Home({ name, occupation }) {
                     <h1 className="text-xl font-semibold lg:text-2xl py-2">{occupation}</h1>
                     {/* btn container */}
                     <div className='flex flex-row justify-center lg:justify-start space-x-6 py-4'>
-                        <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transform hover:-translate-y-2 duration-500 ease-in-out'>
+                        <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transition-all hover:-translate-y-2 duration-500 ease-in-out hover:bg-teal-400 hover:text-white'>
                             <IconButton icon={faDownload} link={'https://drive.google.com/file/d/1YwFeQdcTSTl0mj1By4dPxvCu_1m8UclC/view?usp=sharing'} content={'Resume'}/>
                         </div>
-                        <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transform hover:-translate-y-2 duration-500 ease-in-out'>
+                        <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transform hover:-translate-y-2 duration-500 ease-in-out hover:bg-teal-400 hover:text-white'>
                             <Link
                                 to='contact'
                                 spy={true}
