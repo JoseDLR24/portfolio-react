@@ -4,12 +4,27 @@
 
 @layer components {
     .comp-container {
-        @apply min-h-screen max-w-full flex flex-col justify-center items-center;
+    @apply min-h-screen max-w-full flex flex-col justify-center items-center;
     }
     .content-container {
-        @apply flex flex-col items-center justify-center w-96 text-center md:w-8/12 lg:max-w-4xl px-3 md:px-0;
+    @apply flex flex-col items-center justify-center w-96 text-center md:w-8/12 lg:max-w-4xl px-3 md:px-0;
     }
     .btn-primary {
-        @apply font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer hover:bg-teal-400 hover:text-white transition duration-300;
+    @apply font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer hover:bg-teal-400 hover:text-white transition duration-300;
     }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* color of the bar */
+    background-color: #2dd4bf; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* bg color of the scroll bar track */
+    background: #373D43;
 }
