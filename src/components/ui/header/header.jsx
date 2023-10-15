@@ -26,20 +26,19 @@ export default function Header() {
 
     
     return (
-        <header className={`comp-container min-h-fit fixed top-0 left-0 w-full transition-transform transform duration-300 ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'} bg-white z-50 shadow-lg`}>
-            <div className="content-container flex flex-col items-center space-y-2 py-5 md:flex-row md:justify-between md:space-y-0">
-                <h1 className="text-2xl font-bold">JOSE.DEV</h1>
+        <header className={`comp-container min-h-fit fixed top-0 left-0 w-full transition-transform transform duration-300 ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'} bg-white z-50 shadow-lg `}>
+            <div className="flex flex-col items-center justify-center w-96 text-center md:w-7/12 px-3 md:px-0 space-y-2 py-5 md:flex-row md:justify-between md:space-y-0">
+                <Link
+                to='home'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1000}
+                className="cursor-pointer text-2xl font-bold"
+                >
+                JOSE.DEV
+                </Link>
                 <nav className="flex flex-row space-x-6">
-                    <Link
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={1000}
-                    className="cursor-pointer"
-                    >
-                    Home
-                    </Link>
                     <Link
                     to='about'
                     spy={true}
@@ -69,6 +68,16 @@ export default function Header() {
                     className="cursor-pointer"
                     >
                     Projects
+                    </Link>
+                    <Link
+                    to='contact'
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={1000}
+                    className="cursor-pointer"
+                    >
+                    Contact
                     </Link>
                 </nav>
             </div>
