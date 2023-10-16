@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import { Link, Element } from 'react-scroll';
 
 //importing animations
@@ -11,6 +12,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home({ name, occupation }) {
+    const lottieRef = useRef(null);
+
+    useEffect(() => {
+        const startAnimation = () => {
+            if (lottieRef.current) {
+                lottieRef.current.play();
+                console.log("Animation started playing after the page loaded.");
+            }
+        };
+
+        // Start the animation when the page has completely loaded, or after a delay (adjust as needed)
+        window.addEventListener('load', startAnimation);
+
+        // Don't forget to remove the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('load', startAnimation);
+        };
+    }, []);
     return (
         <section id='home' className="comp-container">
             {/* content container */}
@@ -24,7 +43,7 @@ export default function Home({ name, occupation }) {
                     {/* btn container */}
                     <div className='flex flex-row justify-center lg:justify-start space-x-6 py-4'>
                         <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transition-all hover:-translate-y-2 duration-500 ease-in-out hover:bg-teal-400 hover:text-white'>
-                            <IconButton icon={faDownload} link={'https://drive.google.com/file/d/1YwFeQdcTSTl0mj1By4dPxvCu_1m8UclC/view?usp=sharing'} content={'Resume'}/>
+                            <IconButton icon={faDownload} link={'https://drive.google.com/file/d/1YwFeQdcTSTl0mj1By4dPxvCu_1m8UclC/view?usp=sharing'} content={'Resume'} />
                         </div>
                         <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transform hover:-translate-y-2 duration-500 ease-in-out hover:bg-teal-400 hover:text-white'>
                             <Link
@@ -35,15 +54,15 @@ export default function Home({ name, occupation }) {
                                 duration={1000}
                                 className="cursor-pointer"
                             >
-                                <IconButton icon={faEnvelope} content={'Contact'}/>
+                                <IconButton icon={faEnvelope} content={'Contact'} />
                             </Link>
                         </div>
 
                     </div>
                 </div>
                 {/* img container */}
-                <div className='w-96 md:w-4/5 lg:w-6/12'>
-                    <Lottie animationData={LandingAnimation} />
+                <div className='w-96 md:w-4/5 lg:w-6/12 md:flex'>
+                    <Lottie animationData={LandingAnimation} loop={false} autoPlay={true} ref={lottieRef} />
                 </div>
             </div>
         </section>
