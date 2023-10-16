@@ -8,6 +8,9 @@ export default {
     extend: {
       colors: {
         blueblack: "#373D43"
+      },
+      fontFamily: {
+        'jetBrains': ['JetBrains Mono', 'monospace']
       }
     },
   },
