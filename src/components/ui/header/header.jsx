@@ -38,7 +38,7 @@ export default function Header() {
                 >
                     JOSE.DEV
                 </Link>
-                <nav className="flex flex-row space-x-3 lg:space-x-6">
+                <nav className="flex flex-row space-x- lg:space-x-6">
                     <Link
                         to='about'
                         spy={true}
@@ -83,7 +83,7 @@ export default function Header() {
                         href='https://drive.google.com/file/d/1YwFeQdcTSTl0mj1By4dPxvCu_1m8UclC/view?usp=sharing'
                         target='_blank'
                         rel='noopener noreferrer' // Recommended for security
-                        className='cursor-pointer font-bold underline decoration-wavy decoration-teal-400 p-2 transform hover:-translate-y-1 duration-500 ease-in-out'
+                        className='cursor-pointer font-bold underline decoration-wavy decoration-teal-400 p-2 transform hover:-translate-y-1 duration-500 ease-in-out hidden lg:flex'
                     >
                         Resume
                     </a>
