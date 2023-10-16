@@ -62,7 +62,7 @@ export default function Home({ name, occupation }) {
                 </div>
                 {/* img container */}
                 <div className='w-96 md:w-4/5 lg:w-6/12 md:flex'>
-                    <Lottie animationData={LandingAnimation} loop={false} autoPlay={true} ref={lottieRef} />
+                    <Lottie animationData={LandingAnimation} loop={false} autoPlay={false} ref={lottieRef} />
                 </div>
             </div>
         </section>
