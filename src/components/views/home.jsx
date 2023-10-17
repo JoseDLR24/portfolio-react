@@ -3,7 +3,7 @@ import { Link, Element } from 'react-scroll';
 
 //importing animations
 import Lottie from "lottie-react";
-import LandingAnimation from '../../assets/landing.json';
+import LandingAnimation from '../../assets/data.json';
 
 import IconButton from '../ui/buttons/iconButton';
 
@@ -62,7 +62,7 @@ export default function Home({ name, occupation }) {
                 </div>
                 {/* img container */}
                 <div className='w-96 md:w-4/5 lg:w-6/12 md:flex'>
-                    <Lottie animationData={LandingAnimation} loop={false} autoPlay={false} ref={lottieRef} />
+                    <Lottie animationData={LandingAnimation} loop={true} autoPlay={false} ref={lottieRef} />
                 </div>
             </div>
         </section>
