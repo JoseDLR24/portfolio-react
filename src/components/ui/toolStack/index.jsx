@@ -18,7 +18,7 @@ export default function Tools() {
                 <h3 className='text-md lg:text-lg font-semibold'>Tools</h3>
                 <ul className='flex flex-wrap md:space-x-8 lg:space-x-10'>
                     {toolsData.map((tool, index) => (
-                        <li key={index} className='text-sm flex flex-col items-center w-20'>
+                        <li key={index} className='text-sm flex flex-col items-center w-24'>
                             <img src={tool.icon} alt={tool.name} className='w-8 md:w-12 lg:w-14'/> {tool.name}
                         </li>
                     ))}

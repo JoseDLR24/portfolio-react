@@ -26,8 +26,8 @@ export default function Header() {
 
 
     return (
-        <header className={`comp-container min-h-fit fixed top-0 left-0 w-full transition-transform transform duration-300 ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'} bg-white z-50 shadow-lg `}>
-            <div className="flex flex-col items-center justify-center w-96 text-center md:w-7/12 px-3 md:px-0 space-y-2 py-5 md:flex-row md:justify-between md:space-y-0">
+        <header className={`comp-container min-h-fit fixed top-0 left-0 w-full transition-transform transform duration-300 ${isScrollingUp ? 'translate-y-0' : '-translate-y-full'} bg-white z-50 shadow-lg`}>
+            <div className="flex flex-col items-center justify-center w-96 text-center md:w-7/12 px-3 md:px-0 space-y-2 py-2 md:py-5 md:flex-row md:justify-between md:space-y-0">
                 <Link
                     to='home'
                     spy={true}
