@@ -80,7 +80,7 @@ export default function Header() {
                         Contact
                     </Link>
                     <a
-                        href='https://drive.google.com/file/d/1YwFeQdcTSTl0mj1By4dPxvCu_1m8UclC/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1l7qYj_9OTxbpABokssuqZlppBFYDiGVu/view?usp=share_link'
                         target='_blank'
                         rel='noopener noreferrer' // Recommended for security
                         className='cursor-pointer font-bold underline decoration-wavy decoration-teal-400 p-2 transform hover:-translate-y-1 duration-500 ease-in-out hidden lg:flex'
