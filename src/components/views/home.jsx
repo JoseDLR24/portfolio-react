@@ -33,7 +33,7 @@ export default function Home({ name, occupation }) {
     return (
         <section id='home' className="comp-container">
             {/* content container */}
-            <div className="flex flex-col items-center justify-center w-96 text-center md:w-7/12 px-3 md:px-0 lg:flex-row lg:text-left lg:justify-between">
+            <div className="content-container lg:flex-row lg:text-left lg:justify-between">
                 <div className='h-60 pb-4'>
                     <p className="text-base lg:text-lg py-2 text-gray-600">Hello World, I'm</p>
                     {/* user name */}

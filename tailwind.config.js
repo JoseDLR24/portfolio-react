@@ -10,7 +10,8 @@ export default {
         blueblack: "#373D43"
       },
       fontFamily: {
-        'jetBrains': ['JetBrains Mono', 'monospace']
+        'jetBrains': ['JetBrains Mono', 'monospace'],
+        'nunito': ['Nunito', 'sans-serif']
       }
     },
   },

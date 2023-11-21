@@ -12,7 +12,7 @@ export default function About(){
                 <div className="flex flex-col items-center lg:items-start space-y-4 lg:flex-row-reverse lg:space-y-0">
                     <img src={pfpimg} alt="" className="w-72 rounded-2xl lg:ml-7"/>
                     {/* text container */}
-                    <div className="space-y-3">
+                    <div className="space-y-3 text-lg">
                         <p>Hey there! I'm a web developer and designer, and I have knowledge in SQL, PHP, HTML & CSS to JavaScript with awesome frameworks like React.js and Vue.js. I'm also comfortable working with MySQL, MongoDB, and ASP.NET. But it's not just about the tech – I've got a solid grasp on Search Engine Optimization (SEO) and I've even dabbled in web analytics and data visualization.</p>
                         <p>I took on the Interactive Media Design - Web diploma program and really zoned in on user experience (UX) and user interface (UI) design.</p>
                         <p>Crafting responsive and visually appealing websites? That's my jam! Let's make the web a better place together!</p>

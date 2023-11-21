@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+/* importing Nunito Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +8,7 @@
 
 @layer components {
     .comp-container {
-    @apply min-h-screen max-w-full flex flex-col justify-center items-center font-jetBrains;
+    @apply min-h-screen max-w-full flex flex-col justify-center items-center font-nunito;
     }
     .content-container {
     @apply flex flex-col items-center justify-center w-96 text-center md:w-8/12 lg:max-w-4xl px-3 md:px-0;
