@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function Header() {
     // HEADER ANIMATION TO APPEAR/DISSAPEAR
