@@ -4,13 +4,13 @@ import FeaturedProjects from '../ui/ftProjects/index.jsx';
 // importing imgs
 import RentalAppImg from '../../assets/rentalAppImg.jpg';
 import SeeNSayImg from '../../assets/seeNSayImg.jpg';
-import TheBookKeeperImg from '../../assets/theBookKeeperImg.jpg';
+import GameHarbourImg from '../../assets/gameHarbourImg.jpg';
 
 
 export default function Projects(){
     const rentalAppTechnologies = ['MongoDB', 'Express', 'React', 'Node.js', 'CSS'];
     const seeNSayTechnologies = ['HTML', 'CSS', 'JavaScript'];
-    const theBookKeeperTechnologies = ['Handlebars', 'MongoDB', 'Express', 'Bootstrap'];
+    const gameHarbourTechnologies = ['React', 'React-Router', 'DaisyUI', 'TailwindCSS'];
 
     return(
         <section id='projects' className="comp-container lg:space-y-5">
@@ -40,12 +40,12 @@ export default function Projects(){
                     gitRepoLink={'https://github.com/JoseDLR24/SeeNSayStoryMaker'}
                     />
                     <FeaturedProjects 
-                    title={'The Book Keeper'}
-                    description={'Simple book inventory system, built using essential CRUD functionality. Is important to note that certain advanced functionalities are still in development, the core CRUD operations are fully implemented and operational, demonstrating a solid foundation in web application development'}
-                    imgSrc={TheBookKeeperImg}
-                    technologies={theBookKeeperTechnologies}
-                    liveSiteLink={'https://the-bookkeeper.onrender.com/'}
-                    gitRepoLink={'https://github.com/JoseDLR24/Bookstore-inventory'}
+                    title={'Game Harbour'}
+                    description={'API endpoints integration working with React Router. Utilizing query parameters for URL customization, the platform dynamically adapts to user preferences. This project showcases my expertise in fetching and displaying detailed game information efficiently. With advanced filtering option based on genre'}
+                    imgSrc={GameHarbourImg}
+                    technologies={gameHarbourTechnologies}
+                    liveSiteLink={'https://game-harbour.vercel.app/'}
+                    gitRepoLink={'https://github.com/JoseDLR24/Game-Harbour'}
                     />
                 </div>
         </section>
