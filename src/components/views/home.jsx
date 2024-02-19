@@ -43,7 +43,7 @@ export default function Home({ name, occupation }) {
                     {/* btn container */}
                     <div className='flex flex-row justify-center lg:justify-start space-x-6 py-4'>
                         <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transition-all hover:-translate-y-2 duration-500 ease-in-out hover:bg-teal-400 hover:text-white'>
-                            <IconButton icon={faDownload} link={'https://drive.google.com/file/d/1l7qYj_9OTxbpABokssuqZlppBFYDiGVu/view?usp=share_link'} content={'Resume'} />
+                            <IconButton icon={faDownload} link={'https://drive.google.com/file/d/1LDBSZnEvSWB0sRXMyTR-X_v5rRYOt29Q/view?usp=sharing'} content={'Resume'} />
                         </div>
                         <div className='font-medium border-2 border-teal-400 rounded-xl p-3 space-x-2 cursor-pointer transform hover:-translate-y-2 duration-500 ease-in-out hover:bg-teal-400 hover:text-white'>
                             <Link
